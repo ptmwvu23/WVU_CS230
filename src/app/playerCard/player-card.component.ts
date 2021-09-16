@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
 })
 
 export class PlayerCardComponent {
-
+    player1: string = "Player 1" //"Clayton Keller"
+    Header: string = "Every NHL Player"
 }
 

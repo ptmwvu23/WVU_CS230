@@ -1,6 +1,6 @@
 <div class="card card-custom shadow-lg  bg-white rounded" style="width: 35rem; height: 100rem;">
    
-    <div class="card-header  head-custom"> <a style="color:#ffffff" href="/players/">Every NHL Player</a>
+    <div class="card-header  head-custom"> <a style="color:#ffffff" href="/players/">{{Header}}</a>
 
       
       </div>
@@ -104,7 +104,7 @@
                         <select name="team_val help-space" class="sr_pages_nav no_chosen sr_load_json help-space" id="team_choice" data-json-key="player_json" data-fill="#player_roster .player_list">
                           <option value="" selected="selected" disabled="disabled">Then a player</option>
                             
-                            <option value="ANA">Player 1</option>
+                            <option value="ANA">{{player1}}</option>
                             
                             <option value="ARI">Player 2</option>
                             
@@ -230,7 +230,7 @@ margin-top: 10px;
 
         .custom-select{
             width: 320px;
-            color: silver;
+            color: grey;
         }
 
         .custom-secondary{
@@ -258,7 +258,7 @@ margin-top: 10px;
        margin-top:8px;
        margin-bottom: 12px;
        width: 450px;
-       color: silver;
+       color: grey;
        
       }
 
