@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'Players', component: PlayersComponent },
   { path: 'Teams', component: TeamsComponent},
   { path: 'Seasons', component: SeasonsComponent },
-  { path: 'Leaders', component: SeasonComponent }
+  { path: 'Leaders', component: SeasonComponent },
+  { path: '', redirectTo: '/Home', pathMatch: 'full'},
 ];
 
 
