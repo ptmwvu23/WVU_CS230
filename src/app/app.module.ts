@@ -14,7 +14,9 @@ import { PlayerCardComponent } from './playerCard/player-card.component';
 import { StatheadComponent } from './stathead/stathead.component';
 import { UpperNavBarComponent } from './upperNav/upper-nav-bar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './layout/home.component';
+import { HomepageComponent } from './body/homepage.component';
+import { RouterLayoutComponent } from './layout/routing-layout.component';
+
 
 
 
@@ -32,7 +34,9 @@ import { HomeComponent } from './layout/home.component';
     TeamsComponent,
     SeasonsComponent,
     SeasonComponent,
-    HomeComponent
+    HomepageComponent,
+    RouterLayoutComponent
+    
     
   ],
   imports: [
