@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
+import { PlayersComponent } from './body/players.component';
+import { SeasonComponent } from './body/season.component';
+import { SeasonsComponent } from './body/seasons.component';
+import { TeamsComponent } from './body/teams.component';
 import { BottomNavBarComponent } from './footer/bottom-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
@@ -21,8 +25,12 @@ import { UpperNavBarComponent } from './upperNav/upper-nav-bar.component';
     PlayerCardComponent,
     BodyComponent,
     LayoutMainComponent,
-    StatheadComponent
-   
+    StatheadComponent,
+    PlayersComponent,
+    TeamsComponent,
+    SeasonsComponent,
+    SeasonComponent
+    
   ],
   imports: [
     BrowserModule
