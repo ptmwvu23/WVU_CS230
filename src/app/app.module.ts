@@ -13,6 +13,8 @@ import { LayoutMainComponent } from './layout/layout-main.component';
 import { PlayerCardComponent } from './playerCard/player-card.component';
 import { StatheadComponent } from './stathead/stathead.component';
 import { UpperNavBarComponent } from './upperNav/upper-nav-bar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './layout/home.component';
 
 
 
@@ -29,11 +31,13 @@ import { UpperNavBarComponent } from './upperNav/upper-nav-bar.component';
     PlayersComponent,
     TeamsComponent,
     SeasonsComponent,
-    SeasonComponent
+    SeasonComponent,
+    HomeComponent
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
