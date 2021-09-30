@@ -1,0 +1,17 @@
+
+  <table class="table table-hover table-bordered sizing background-color:table-light">
+ 
+      <div *ngFor="let table of table;">
+   <row-component class="sizing" team={{table.team}} wins={{table.wins}} loss={{table.loss}} OT={{table.OT}} PTS={{table.PTS}} RW={{table.RW}} RegRC={{table.RegRC}} Regper={{table.Regper}}>
+
+
+   </row-component>
+   </div>
+    <style>
+        .sizing{
+            font-size: 18px;
+            
+            
+        }
+    </style>
+  </table>

@@ -16,6 +16,8 @@ import { UpperNavBarComponent } from './upperNav/upper-nav-bar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './body/homepage.component';
 import { RouterLayoutComponent } from './layout/routing-layout.component';
+import { TableComponent } from './body/table.component';
+import { RowComponent } from './body/row.component';
 
 
 
@@ -35,7 +37,9 @@ import { RouterLayoutComponent } from './layout/routing-layout.component';
     SeasonsComponent,
     SeasonComponent,
     HomepageComponent,
-    RouterLayoutComponent
+    RouterLayoutComponent,
+    TableComponent,
+    RowComponent
     
     
   ],
