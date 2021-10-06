@@ -18,7 +18,8 @@ import { HomepageComponent } from './body/homepage.component';
 import { RouterLayoutComponent } from './layout/routing-layout.component';
 import { TableComponent } from './body/table.component';
 import { RowComponent } from './body/row.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './upperNav/user-info.component';
 
 
 
@@ -39,13 +40,17 @@ import { RowComponent } from './body/row.component';
     HomepageComponent,
     RouterLayoutComponent,
     TableComponent,
-    RowComponent
+    RowComponent,
+    UserInfoComponent
     
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+ 
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
