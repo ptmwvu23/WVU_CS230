@@ -1,18 +1,32 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { mock_row } from "./mock-row";
-import { Table } from "./row.model"
+import { Table } from "./row.model";
+import { LibraryService } from "./library.service";
 
 @Component({
     selector: "table-component",
     templateUrl: "table.component.html"
 })
-export class TableComponent{
+export class TableComponent implements OnInit{
     table: Table[] = [];
 
-    constructor(){
+    constructor(private libraryService: LibraryService){
           
-        for(var table of mock_row){
-            this.table.push(new Table(table)); 
-        }
     }
+
+    ngOnInit(): void {
+        
+        console.log('showing data');
+        this.showRows();
+      
+    }
+
+    showRows(){
+        this.libraryService.getMockRow().subscribe((data: Table[])=>{
+            console.log(data);
+            this.table = data;
+        })
+    }
+
+  
 }
