@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { PlayersComponent } from './body/players.component';
@@ -20,6 +21,8 @@ import { TableComponent } from './body/table.component';
 import { RowComponent } from './body/row.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './upperNav/user-info.component';
+import { CreateAccComponent } from './body/createAcc.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -42,7 +45,8 @@ import { UserInfoComponent } from './upperNav/user-info.component';
     RouterLayoutComponent,
     TableComponent,
     RowComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CreateAccComponent
     
     
   ],
@@ -51,7 +55,9 @@ import { UserInfoComponent } from './upperNav/user-info.component';
     AppRoutingModule,
  
     // import HttpClientModule after BrowserModule.
-    HttpClientModule
+    HttpClientModule,
+
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

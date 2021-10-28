@@ -1,0 +1,44 @@
+<form #postForm="ngForm" (ngSubmit)="addData(postForm.value)">
+    <div class="fonter">
+        <b>Create Your Hockey Reference Account</b> 
+    </div>
+    
+    <div class="input-group mb-3 padding">
+        <span class="input-group-text" id="basic-addon1">Enter Username</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" ngModel name="username">
+      </div>
+      <div class="input-group mb-3 padding">
+        <span class="input-group-text" id="basic-addon1">Enter Password</span>
+        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" ngModel name="password">
+      </div>
+      <div class="input-group mb-3 padding">
+        <span class="input-group-text" id="basic-addon1">Enter Email Address</span>
+        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" ngModel name="email">
+      </div>
+      <div class="input-group mb-3 padding">
+        <span class="input-group-text" id="basic-addon1">Enter Phone Number</span>
+        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" ngModel name="phone_number">
+      </div>
+      <button class="btn styler btn-primary" type="submit" style="color: rgb(240, 230, 230);">
+          Create Account
+      </button>
+
+      <style>
+        .styler{
+            margin-bottom: 18px;
+           margin-left: 960px;
+        }
+  
+        .fonter{
+            font-size: 26px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-left: 500px;
+            margin-top: 18px;
+        }
+  
+        .padding{
+          padding-left: 500px;
+            padding-right: 500px;
+        }
+        </style>
+</form>

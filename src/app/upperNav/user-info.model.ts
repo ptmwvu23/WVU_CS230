@@ -1,6 +1,7 @@
 export interface UserInfo{
-    LastName: string;
-    FirstName: string;
-    mix_id: string;
-    GitHub: string;
+    Password: string;
+    Username: string;
+    email: string;
+    phone_number: string;
+
 }
