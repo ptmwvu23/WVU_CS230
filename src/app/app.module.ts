@@ -23,6 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './upperNav/user-info.component';
 import { CreateAccComponent } from './body/createAcc.component';
 import { FormsModule } from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 
 
@@ -57,7 +60,9 @@ import { FormsModule } from '@angular/forms';
     // import HttpClientModule after BrowserModule.
     HttpClientModule,
 
-    FormsModule
+    FormsModule,
+     provideFirebaseApp(() => initializeApp(environment.firebase)),
+     provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]

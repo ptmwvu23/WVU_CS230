@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hockeyreference-app": {
+      "hosting": {
+        "HockeyReference": [
+          "hockeyreference-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hockeyreference-app"
+  }
+}
