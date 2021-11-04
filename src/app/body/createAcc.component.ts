@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { UserInfo } from "../upperNav/user-info.model";
+import { DatabaseService } from "./database.service";
 import { LibraryService } from "./library.service";
 
 @Component({
@@ -8,8 +9,8 @@ import { LibraryService } from "./library.service";
 })
 export class CreateAccComponent{
   
-    constructor(private libraryservice:LibraryService){
-
+    constructor(private libraryservice:LibraryService, private dbService:DatabaseService){
+dbService.showData();
 
     }
 

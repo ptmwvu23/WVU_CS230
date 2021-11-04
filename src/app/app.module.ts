@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 
@@ -61,6 +61,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     HttpClientModule,
 
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'HockeyReference-app'),
      provideFirebaseApp(() => initializeApp(environment.firebase)),
      provideDatabase(() => getDatabase())
   ],
